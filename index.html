@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="header">
+        <h1>ROCK PAPER SCISSORS</h1>
+    </div>
+    <hr>
+    <div class="main">
+        <h2 class="status">Beat your opponent!</h2>
+        <h4 class="update">First to score 5 points wins the game</h4>
+        <div class="scoreTable">
+            <div id="playerScore" class="score">Player Score: 0</div>
+            <div id="computerScore" class="score">Enemy Score: 0</div>
+        </div>
+        <div class="buttons">
+            <button id="rock" value="rock">🪨</button>
+            <button id="paper" value="paper">📃</button>
+            <button id="scissors" value="scissors">✂️</button>
+        </div>
+    </div>
+    <!-- The overlay -->
+    <div id="overlay" class="overlay">
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <!-- <span class="close" onclick="closeOverlay()">&times;</span> -->
+            <p class="notify"></p>
+            <button class="restartButton">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
