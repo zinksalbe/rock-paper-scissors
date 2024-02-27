@@ -1,6 +1,6 @@
 const choices = ["rock", "paper", "scissors"];
-let pWinCount = 4;
-let cWinCount = 4;
+let pWinCount = 0;
+let cWinCount = 0;
 
 const btnRock = document.querySelector("#rock");
 const btnPaper = document.querySelector("#paper");
